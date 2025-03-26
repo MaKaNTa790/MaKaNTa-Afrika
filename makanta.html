@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaKaNTa Afrika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('image.png.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(34, 34, 34, 0.8);
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .section {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .albums, .clothing {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .item {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(51, 51, 51, 0.8);
+            border-radius: 10px;
+        }
+        button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MaKaNTa Afrika</h1>
+        <nav>
+            <a href="#albums">Albums</a>
+            <a href="#clothing">Clothing</a>
+        </nav>
+    </header>
+    
+    <section id="albums" class="section">
+        <h2>Albums</h2>
+        <div class="albums">
+            <div class="item">
+                <h3>Maskini Katika Nchi Tajiri</h3>
+                <p>Latest hit album</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Maskini Katika Nchi Tajiri')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Life of Mkolosae</h3>
+                <p>Top-selling album</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Life of Mkolosae')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Uhuru Haupo Huru</h3>
+                <p>Critically acclaimed</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Uhuru Haupo Huru')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Nje ya Mtaala</h3>
+                <p>Revolutionary sound</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Nje ya Mtaala')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Momumo</h3>
+                <p>Fan favorite</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Momumo')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Hisia</h3>
+                <p>Deep and emotional</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Hisia')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Dreams</h3>
+                <p>Inspirational music</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Dreams')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Upendo Utuongoze</h3>
+                <p>Love and unity</p>
+                <p>Price: 20,000 TZS</p>
+                <p>Pay via MPESA: 0759387368</p>
+                <button onclick="buyNow('Upendo Utuongoze')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="clothing" class="section">
+        <h2>Clothing</h2>
+        <div class="clothing">
+            <div class="item">
+                <h3>Hip Hop Hoodie</h3>
+                <p>Exclusive merch</p>
+                <p>Price: 35,000 TZS</p>
+                <button onclick="buyNow('Hoodie')">Buy Now</button>
+            </div>
+            <div class="item">
+                <h3>Hip Hop T-Shirt</h3>
+                <p>Classic design</p>
+                <p>Price: 25,000 TZS</p>
+                <button onclick="buyNow('T-Shirt')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function buyNow(item) {
+            alert("You selected: " + item + "\nPrice: " + (item === 'Hoodie' ? '35,000 TZS' : item === 'T-Shirt' ? '25,000 TZS' : '20,000 TZS') + "\nPay via MPESA: 0759387368");
+        }
+    </script>
+</body>
+</html>
